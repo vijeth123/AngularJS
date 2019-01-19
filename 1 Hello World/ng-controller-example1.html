@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="../lib/angular.min.js"></script>
 </head>
 
 <body>
-    <h1 ng-controller="HelloWorldController">{{message}}</h1>
+    <h1 ng-controller="MyController">{{message}}</h1>
 
     <script>
-        angular.module("app", []).controller("HelloWorldController", function($scope){$scope.message = 'Hi Vijeth! Good morning!'})
+        angular.module("app", []).controller("MyController", function($scope){$scope.message = 'Hi, Good morning!'})
     </script>
 </body>
 </html>
