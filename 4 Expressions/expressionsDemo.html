@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expressions</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../lib/angular.min.js"></script>
+    <script src="../lib/jquery-3.3.1.min.js"></script>
+    <script src="../lib/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="Container" ng-app=""
+            ng-init="firstName='Vijeth';lastName='Kumar';fee=10000;marks=[90,92,85]" style="padding-left: 50px">
+        <h1>Expressions</h1><br/>
+        <b>First Name:</b> {{firstName | uppercase}}<br/>
+        <b>Last Name: </b>{{lastName | uppercase}}<br/><br/>
+        <b>Tuition fees: </b>{{fee | currency}}<br/><br/>
+
+        <h3>Score:</h3>
+        <b>Java: </b>{{marks[0]}}<br/>
+        <b>Spring: </b>{{marks[1]}}<br/>
+        <b>Junit: </b>{{marks[2]}}<br/>
+        <b>Average: </b>{{(marks[0] + marks[1] + marks[2])/3}}
+    </div>
+</body>
+</html>

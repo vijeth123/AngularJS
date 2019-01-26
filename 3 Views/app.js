@@ -16,17 +16,18 @@ app.config(function($routeProvider){
 
  app.controller('ExistingBooksController', function($scope){
                                             $scope.myTopicNames =[
-                                                                  {name: "Spring Boot"},
-                                                                  {name: "REST Webservices"},
-                                                                  {name: "JMS"},
-                                                                  {name: "Java 8"}];
+                                                                  "Spring Boot",
+                                                                  "REST Webservices",
+                                                                  "JMS",
+                                                                  "Java 8"
+                                                                  ];
                                         });
 
  app.controller('NewArrivalController', function($scope){
                                             $scope.myTopicNames =[
-                                                                  {name: "Artificial Intelligence"},
-                                                                  {name: "Machine Learning"},
-                                                                  {name: "Spring Cloud"},
-                                                                  {name: "AWS"}
+                                                                  "Artificial Intelligence",
+                                                                  "Machine Learning",
+                                                                  "Spring Cloud",
+                                                                  "AWS"
                                                                  ];
                                         });

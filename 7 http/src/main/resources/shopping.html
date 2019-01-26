@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Festival</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-route.js"></script>
+    <script src="lib/angular-resource.min.js"></script>
+    <script src="lib/jquery-3.3.1.min.js"></script>
+    <script src="lib/bootstrap.js"></script>
+    <script src="lib/app.js"></script>
+</head>
+
+<body>
+    <div ng-app="shoppingApp" ng-controller="ShoppingController" class="container">
+        <h1>*** Shopping Festival ***</h1>
+        Limited period discounts from the company: <b>{{company}}</b><br/>
+        Items are: <b>{{items}}</b><br/>
+        <font style="color: red"><b>Note: Please make sure that Spring-Boot server is running</b></font>
+    </div>
+</body>
+</html>
