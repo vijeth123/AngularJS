@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Special Table</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../lib/angular.min.js"></script>
+    <script src="../lib/jquery-3.3.1.min.js"></script>
+    <script src="../lib/bootstrap.js"></script>
+    <script src="app.js"></script>
+    <style>
+        table,th,td{
+            border: 1px solid grey;
+            padding:5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" ng-app="table-app" ng-controller="table-controller">
+        <h1>Special Table</h1><br/>
+        <table>
+            <tr><th>Sl no.</th><th>Title</th><th>Description</th></tr>
+            <tr ng-repeat="topic in topics | orderBy: 'name'">
+                <td>{{$index + 1}}</td>
+                <td>{{topic.name | uppercase}}</td>
+                <td>{{topic.description}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
